@@ -51,7 +51,9 @@ var defaultSites = {
   'The Wall Street Journal': 'wsj.com',
   'Towards Data Science': 'towardsdatascience.com',
   'Vanity Fair': 'vanityfair.com',
-  'Wired': 'wired.com'
+  'Wired': 'wired.com',
+  'The Advocate': 'theadvocate.com.au',
+  'Examiner': 'examiner.com.au'
 };
 
 // Saves options to browser.storage

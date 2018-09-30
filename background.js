@@ -53,7 +53,9 @@ var defaultSites = {
   'The Wall Street Journal': 'wsj.com',
   'Towards Data Science': 'towardsdatascience.com',
   'Vanity Fair': 'vanityfair.com',
-  'Wired': 'wired.com'
+  'Wired': 'wired.com',
+  'The Advocate': 'theadvocate.com.au',
+  'Examiner': 'examiner.com.au'
 };
 
 const restrictions = {
@@ -78,7 +80,9 @@ const allow_cookies = [
 'newstatesman.com',
 'spectator.co.uk',
 'towardsdatascience.com',
-'medium.com'
+'medium.com',
+'theadvocate.com.au',
+'examiner.com.au' 
 ]
 
 // Removes cookies after page load
@@ -97,7 +101,9 @@ const remove_cookies = [
 'newstatesman.com',
 'spectator.co.uk',
 'towardsdatascience.com',
-'medium.com'
+'medium.com',
+'theadvocate.com.au',
+'examiner.com.au'  
 ]
 
 function setDefaultOptions() {
