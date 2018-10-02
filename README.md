@@ -16,6 +16,7 @@ Daily Press (dailypress.com)\
 Dagens Nyheter (dn.se)\
 Denver Post (denverpost.com)\
 The Economist (economist.com)\
+Examiner (examiner.com.au)\
 Financial Times (ft.com)\
 Glassdoor (glassdoor.com)\
 Haaretz (haaretz.co.il / haaretz.com)\
@@ -32,6 +33,7 @@ New Statesman (newstatesman.com)\
 MIT Technology Review (technologyreview.com)\
 Nikkei Asian Review (asia.nikkei.com)\
 NRC (nrc.nl)\
+The Advocate (theadvocate.com.au)\
 The Boston Globe (bostonglobe.com)\
 The Globe and Mail (theglobeandmail.com)\
 The Japan Times (japantimes.co.jp)\

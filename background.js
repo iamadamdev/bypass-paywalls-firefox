@@ -14,6 +14,7 @@ var defaultSites = {
   'Dagens Nyheter': 'dn.se',
   'Denver Post': 'denverpost.com',
   'The Economist': 'economist.com',
+  'Examiner': 'examiner.com.au',
   'Financial Times': 'ft.com',
   'Glassdoor': 'glassdoor.com',
   'Haaretz': 'haaretz.co.il',
@@ -31,6 +32,7 @@ var defaultSites = {
   'New Statesman': 'newstatesman.com',
   'Nikkei Asian Review': 'asia.nikkei.com',
   'NRC': 'nrc.nl',
+  'The Advocate': 'theadvocate.com.au',
   'The Boston Globe': 'bostonglobe.com',
   'The Business Journals': 'bizjournals.com',
   'The Globe and Mail': 'theglobeandmail.com',
@@ -78,7 +80,9 @@ const allow_cookies = [
 'newstatesman.com',
 'spectator.co.uk',
 'towardsdatascience.com',
-'medium.com'
+'medium.com',
+'theadvocate.com.au',
+'examiner.com.au' 
 ]
 
 // Removes cookies after page load
@@ -97,7 +101,9 @@ const remove_cookies = [
 'newstatesman.com',
 'spectator.co.uk',
 'towardsdatascience.com',
-'medium.com'
+'medium.com',
+'theadvocate.com.au',
+'examiner.com.au'  
 ]
 
 function setDefaultOptions() {

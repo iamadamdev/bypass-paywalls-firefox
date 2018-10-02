@@ -1,5 +1,6 @@
 Updates--
 
+2018-10-02 v1.3.10: Added theadvocate.com.au, examiner.com.au
 2018-09-09 v1.3.9: Added japantimes.co.jp
 2018-08-31 v1.3.8: Added thestar.com
 2018-07-22 v1.3.7: Added towardsdatascience.com, fixed medium.com
