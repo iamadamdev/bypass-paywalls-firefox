@@ -5,6 +5,7 @@
 ### Bypass the following sites' paywalls with this extension:
 
 The Age (theage.com.au)\
+Autosport (autosport.com)\
 Baltimore Sun (baltimoresun.com)\
 Barron's (barrons.com)\
 Bloomberg (bloomberg.com)\
