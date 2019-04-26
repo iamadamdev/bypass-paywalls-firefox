@@ -1,48 +1,57 @@
 {
-	"background": {
-		"scripts": ["background.js"]
-	},
-	"content_scripts": [
-		{
-			"matches": ["*://*.bizjournals.com/*", "*://*.businessinsider.com/*", "*://*.haaretz.co.il/*", "*://*.repubblica.it/*"],
-			"js": ["contentScript.js"]
-		}
-	],
-	"applications": {
-		"gecko": {
-			"id": "bypasspaywalls@bypasspaywalls.weebly.com",
-			 "update_url": "https://raw.githubusercontent.com/iamadamdev/bypass-paywalls-firefox/master/updates.json"
-		}
-	},
-	"browser_action": {
-		"default_popup": "popup.html",
-		"default_icon": {
-			"128": "bypass.png"
-		},
-		"theme_icons": [
-			{
-				"light": "bypass-dark.png",
-				"dark": "bypass.png",
-				"size": 128
-			}
-		]
-	},
-	"description": "Bypass News Sites' Paywalls",
-	"icons": {
-		"128": "bypass.png"
-	},
-	"manifest_version": 2,
-	"name": "Bypass Paywalls",
-	"short_name": "Bypass Paywall",
-	"options_ui": {
-		"page": "options.html"
-	},
-	"permissions": [
-		"cookies",
-		"<all_urls>",
-		"storage",
-		"webRequest",
-		"webRequestBlocking"
-	],
-	"version": "1.5.3"
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bizjournals.com/*",
+        "*://*.businessinsider.com/*",
+        "*://*.haaretz.co.il/*",
+        "*://*.repubblica.it/*"
+      ],
+      "js": [
+        "js/contentScript.js"
+      ]
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "bypasspaywalls@bypasspaywalls.weebly.com",
+      "update_url": "https://raw.githubusercontent.com/iamadamdev/bypass-paywalls-firefox/master/updates.json"
+    }
+  },
+  "browser_action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "128": "icons/bypass.png"
+    },
+    "theme_icons": [
+      {
+        "light": "icons/bypass-dark.png",
+        "dark": "icons/bypass.png",
+        "size": 128
+      }
+    ]
+  },
+  "description": "Bypass News Sites' Paywalls",
+  "icons": {
+    "128": "icons/bypass.png"
+  },
+  "manifest_version": 2,
+  "name": "Bypass Paywalls",
+  "short_name": "Bypass Paywall",
+  "options_ui": {
+    "page": "html/options.html"
+  },
+  "permissions": [
+    "cookies",
+    "<all_urls>",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "version": "1.5.3"
 }

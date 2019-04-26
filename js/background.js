@@ -1,6 +1,6 @@
 'use strict';
 
-var defaultSites = {
+let defaultSites = {
   'Baltimore Sun': 'baltimoresun.com',
   'Barron\'s': 'barrons.com',
   'Bloomberg': 'bloomberg.com',
@@ -77,7 +77,7 @@ var defaultSites = {
 
 const restrictions = {
   'barrons.com': 'barrons.com/articles'
-}
+};
 
 // Don't remove cookies before page load
 const allow_cookies = [
@@ -104,7 +104,7 @@ const allow_cookies = [
 'hbr.org',
 'nymag.com',
 'theaustralian.com.au',
-]
+];
 
 // Removes cookies after page load
 const remove_cookies = [
@@ -141,7 +141,7 @@ const remove_cookies = [
 'nationalpost.com',
 'volkskrant.nl',
 'handelsblatt.com',
-]
+];
 
 function setDefaultOptions() {
   browser.storage.sync.set({
@@ -158,16 +158,16 @@ const blockedRegexes = [
 /haaretz\.co\.il\/htz\/js\/inter\.js/
 ];
 
-const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-const userAgentMobile = "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)"
+const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
+const userAgentMobile = "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)";
 
-var enabledSites = [];
+let enabledSites = [];
 
 // Get the enabled sites
 browser.storage.sync.get({
   sites: {}
 }, function(items) {
-  var sites = items.sites;
+  let sites = items.sites;
   enabledSites = Object.keys(items.sites).map(function(key) {
     return items.sites[key];
   });
@@ -175,11 +175,11 @@ browser.storage.sync.get({
 
 // Listen for changes to options
 browser.storage.onChanged.addListener(function(changes, namespace) {
-  var key;
+  let key;
   for (key in changes) {
-    var storageChange = changes[key];
+    let storageChange = changes[key];
     if (key === 'sites') {
-      var sites = storageChange.newValue;
+      let sites = storageChange.newValue;
       enabledSites = Object.keys(sites).map(function(key) {
         return sites[key];
       });
@@ -202,8 +202,8 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
     return;
   }
 
-  var param;
-  var updatedUrl;
+      let param;
+      let updatedUrl;
 
   param = getParameterByName("mod", details.url);
 
@@ -228,11 +228,11 @@ browser.webRequest.onBeforeSendHeaders.addListener(function(details) {
     return { cancel: true };
   }
 
-  var requestHeaders = details.requestHeaders;
-  var tabId = details.tabId;
+  let requestHeaders = details.requestHeaders;
+  let tabId = details.tabId;
 
-  var useUserAgentMobile = false;
-  var setReferer = false;
+  let useUserAgentMobile = false;
+  let setReferer = false;
 
   // if referer exists, set it to google
   requestHeaders = requestHeaders.map(function (requestHeader) {
@@ -281,11 +281,11 @@ browser.webRequest.onBeforeSendHeaders.addListener(function(details) {
   requestHeaders.push({
     "name": "X-Forwarded-For",
     "value": "66.249.66.1"
-  })
+  });
 
   // remove cookies before page load
   requestHeaders = requestHeaders.map(function(requestHeader) {
-    for (var siteIndex in allow_cookies) {
+    for (let siteIndex in allow_cookies) {
       if (details.url.indexOf(allow_cookies[siteIndex]) !== -1) {
         return requestHeader;
       }
@@ -303,7 +303,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(function(details) {
       runAt: 'document_start'
     }, function(res) {
       if (browser.runtime.lastError || res[0]) {
-        return;
+
       }
     });
   }
@@ -315,14 +315,14 @@ browser.webRequest.onBeforeSendHeaders.addListener(function(details) {
 
 // remove cookies after page load
 browser.webRequest.onCompleted.addListener(function(details) {
-  for (var domainIndex in remove_cookies) {
-    var domainVar = remove_cookies[domainIndex];
+  for (let domainIndex in remove_cookies) {
+    let domainVar = remove_cookies[domainIndex];
     if (!enabledSites.includes(domainVar) || details.url.indexOf(domainVar) === -1) {
       continue; // don't remove cookies
     }
     browser.cookies.getAll({domain: domainVar}, function(cookies) {
-      for (var i=0; i<cookies.length; i++) {
-        var cookie = {
+      for (let i = 0; i < cookies.length; i++) {
+        let cookie = {
           url: (cookies[i].secure ? "https://" : "http://") + cookies[i].domain + cookies[i].path,
           name: cookies[i].name,
           storeId: cookies[i].storeId
@@ -339,8 +339,8 @@ browser.webRequest.onCompleted.addListener(function(details) {
 });
 
 function isSiteEnabled(details) {
-  var isEnabled = enabledSites.some(function(enabledSite) {
-    var useSite = details.url.indexOf("." + enabledSite) !== -1;
+  let isEnabled = enabledSites.some(function (enabledSite) {
+    let useSite = details.url.indexOf("." + enabledSite) !== -1;
     if (enabledSite in restrictions) {
       return useSite && details.url.indexOf(restrictions[enabledSite]) !== -1;
     }
@@ -352,7 +352,7 @@ function isSiteEnabled(details) {
 function getParameterByName(name, url) {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
-  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+  let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
   results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return '';
