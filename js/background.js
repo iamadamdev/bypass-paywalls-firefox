@@ -143,10 +143,12 @@ const remove_cookies = [
     'handelsblatt.com',
 ];
 
-function setDefaultOptions() {
+function setDefaultOptions()
+{
     browser.storage.sync.set({
         sites: defaultSites
-    }, function () {
+    }, function ()
+    {
         browser.runtime.openOptionsPage();
     });
 }
@@ -166,21 +168,27 @@ let enabledSites = [];
 // Get the enabled sites
 browser.storage.sync.get({
     sites: {}
-}, function (items) {
+}, function (items)
+{
     let sites = items.sites;
-    enabledSites = Object.keys(items.sites).map(function (key) {
+    enabledSites = Object.keys(items.sites).map(function (key)
+    {
         return items.sites[key];
     });
 });
 
 // Listen for changes to options
-browser.storage.onChanged.addListener(function (changes, namespace) {
+browser.storage.onChanged.addListener(function (changes, namespace)
+{
     let key;
-    for (key in changes) {
+    for (key in changes)
+    {
         let storageChange = changes[key];
-        if (key === 'sites') {
+        if (key === 'sites')
+        {
             let sites = storageChange.newValue;
-            enabledSites = Object.keys(sites).map(function (key) {
+            enabledSites = Object.keys(sites).map(function (key)
+            {
                 return sites[key];
             });
         }
@@ -188,17 +196,23 @@ browser.storage.onChanged.addListener(function (changes, namespace) {
 });
 
 // Set and show default options on install
-browser.runtime.onInstalled.addListener(function (details) {
-    if (details.reason === "install") {
+browser.runtime.onInstalled.addListener(function (details)
+{
+    if (details.reason === "install")
+    {
         setDefaultOptions();
-    } else if (details.reason === "update") {
+    }
+    else if (details.reason === "update")
+    {
         // User updated extension
     }
 });
 
 // WSJ bypass
-browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
-        if (!isSiteEnabled(details) || details.url.indexOf("mod=rsswn") !== -1) {
+browser.webRequest.onBeforeSendHeaders.addListener(function (details)
+    {
+        if (!isSiteEnabled(details) || details.url.indexOf("mod=rsswn") !== -1)
+        {
             return;
         }
 
@@ -207,10 +221,13 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
 
         param = getParameterByName("mod", details.url);
 
-        if (param === null) {
+        if (param === null)
+        {
             updatedUrl = stripQueryStringAndHashFromPath(details.url);
             updatedUrl += "?mod=rsswn";
-        } else {
+        }
+        else
+        {
             updatedUrl = details.url.replace(param, "rsswn");
         }
         return {redirectUrl: updatedUrl};
@@ -219,14 +236,18 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
     ["blocking"]
 );
 
-browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
-    if (!isSiteEnabled(details)) {
+browser.webRequest.onBeforeSendHeaders.addListener(function (details)
+{
+    if (!isSiteEnabled(details))
+    {
         return;
     }
 
-    if (blockedRegexes.some(function (regex) {
+    if (blockedRegexes.some(function (regex)
+    {
         return regex.test(details.url);
-    })) {
+    }))
+    {
         return {cancel: true};
     }
 
@@ -237,20 +258,28 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
     let setReferer = false;
 
     // if referer exists, set it to google
-    requestHeaders = requestHeaders.map(function (requestHeader) {
-        if (requestHeader.name === 'Referer') {
-            if (details.url.indexOf("cooking.nytimes.com/api/v1/users/bootstrap") !== -1) {
+    requestHeaders = requestHeaders.map(function (requestHeader)
+    {
+        if (requestHeader.name === 'Referer')
+        {
+            if (details.url.indexOf("cooking.nytimes.com/api/v1/users/bootstrap") !== -1)
+            {
                 // this fixes images not being loaded on cooking.nytimes.com main page
                 // referrer has to be *nytimes.com otherwise returns 403
                 requestHeader.value = 'https://cooking.nytimes.com';
-            } else if (details.url.indexOf("wsj.com") !== -1 || details.url.indexOf("ft.com") !== -1) {
+            }
+            else if (details.url.indexOf("wsj.com") !== -1 || details.url.indexOf("ft.com") !== -1)
+            {
                 requestHeader.value = 'https://www.facebook.com/';
-            } else {
+            }
+            else
+            {
                 requestHeader.value = 'https://www.google.com/';
             }
             setReferer = true;
         }
-        if (requestHeader.name === 'User-Agent') {
+        if (requestHeader.name === 'User-Agent')
+        {
             useUserAgentMobile = requestHeader.value.toLowerCase().includes("mobile");
         }
 
@@ -258,13 +287,17 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
     });
 
     // otherwise add it
-    if (!setReferer) {
-        if (details.url.indexOf("wsj.com") !== -1) {
+    if (!setReferer)
+    {
+        if (details.url.indexOf("wsj.com") !== -1)
+        {
             requestHeaders.push({
                 name: 'Referer',
                 value: 'https://www.facebook.com/'
             });
-        } else {
+        }
+        else
+        {
             requestHeaders.push({
                 name: 'Referer',
                 value: 'https://www.google.com/'
@@ -273,7 +306,8 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
     }
 
     // override User-Agent except on medium.com
-    if (details.url.indexOf("medium.com") === -1) {
+    if (details.url.indexOf("medium.com") === -1)
+    {
         requestHeaders.push({
             "name": "User-Agent",
             "value": useUserAgentMobile ? userAgentMobile : userAgentDesktop
@@ -286,25 +320,32 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
     });
 
     // remove cookies before page load
-    requestHeaders = requestHeaders.map(function (requestHeader) {
-        for (let siteIndex in allow_cookies) {
-            if (details.url.indexOf(allow_cookies[siteIndex]) !== -1) {
+    requestHeaders = requestHeaders.map(function (requestHeader)
+    {
+        for (let siteIndex in allow_cookies)
+        {
+            if (details.url.indexOf(allow_cookies[siteIndex]) !== -1)
+            {
                 return requestHeader;
             }
         }
-        if (requestHeader.name === 'Cookie') {
+        if (requestHeader.name === 'Cookie')
+        {
             requestHeader.value = '';
         }
         return requestHeader;
     });
 
-    if (tabId !== -1) {
+    if (tabId !== -1)
+    {
         // run contentScript inside tab
         browser.tabs.executeScript(tabId, {
             file: 'contentScript.js',
             runAt: 'document_start'
-        }, function (res) {
-            if (browser.runtime.lastError || res[0]) {
+        }, function (res)
+        {
+            if (browser.runtime.lastError || res[0])
+            {
 
             }
         });
@@ -316,20 +357,26 @@ browser.webRequest.onBeforeSendHeaders.addListener(function (details) {
 }, ['blocking', 'requestHeaders']);
 
 // remove cookies after page load
-browser.webRequest.onCompleted.addListener(function (details) {
-    for (let domainIndex in remove_cookies) {
+browser.webRequest.onCompleted.addListener(function (details)
+{
+    for (let domainIndex in remove_cookies)
+    {
         let domainVar = remove_cookies[domainIndex];
-        if (!enabledSites.includes(domainVar) || details.url.indexOf(domainVar) === -1) {
+        if (!enabledSites.includes(domainVar) || details.url.indexOf(domainVar) === -1)
+        {
             continue; // don't remove cookies
         }
-        browser.cookies.getAll({domain: domainVar}, function (cookies) {
-            for (let i = 0; i < cookies.length; i++) {
+        browser.cookies.getAll({domain: domainVar}, function (cookies)
+        {
+            for (let i = 0; i < cookies.length; i++)
+            {
                 let cookie = {
                     url: (cookies[i].secure ? "https://" : "http://") + cookies[i].domain + cookies[i].path,
                     name: cookies[i].name,
                     storeId: cookies[i].storeId
                 };
-                if (cookies[i].firstPartyDomain !== undefined) {
+                if (cookies[i].firstPartyDomain !== undefined)
+                {
                     cookie.firstPartyDomain = cookies[i].firstPartyDomain;
                 }
                 browser.cookies.remove(cookie);
@@ -340,17 +387,21 @@ browser.webRequest.onCompleted.addListener(function (details) {
     urls: ["<all_urls>"]
 });
 
-function isSiteEnabled(details) {
-    return enabledSites.some(function (enabledSite) {
+function isSiteEnabled(details)
+{
+    return enabledSites.some(function (enabledSite)
+    {
         let useSite = details.url.indexOf("." + enabledSite) !== -1;
-        if (enabledSite in restrictions) {
+        if (enabledSite in restrictions)
+        {
             return useSite && details.url.indexOf(restrictions[enabledSite]) !== -1;
         }
         return useSite;
     });
 }
 
-function getParameterByName(name, url) {
+function getParameterByName(name, url)
+{
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
     let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -360,6 +411,7 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-function stripQueryStringAndHashFromPath(url) {
+function stripQueryStringAndHashFromPath(url)
+{
     return url.split("?")[0].split("#")[0];
 }
