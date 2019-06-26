@@ -50,4 +50,19 @@ if (window.location.href.indexOf("bizjournals.com") !== -1) {
       document.querySelector('.close-btn').click();
     }, 2000);
   }
+} else if (window.location.href.indexOf("washingtonpost.com") !== -1) {
+  if (location.href.includes('/gdpr-consent/')) {
+    document.querySelector('.gdpr-consent-container .continue-btn.button.free').click();
+
+    setTimeout(function (){
+
+      const gdprcheckbox = document.querySelector('.gdpr-consent-container .consent-page:not(.hide) #agree');
+      if (gdprcheckbox) {
+        gdprcheckbox.checked = true;
+        gdprcheckbox.dispatchEvent(new Event('change'));
+
+        document.querySelector('.gdpr-consent-container .consent-page:not(.hide) .continue-btn.button.accept-consent').click();
+      }
+    }, 300); // Delay (in milliseconds) 
+  }
 }
