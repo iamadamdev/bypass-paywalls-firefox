@@ -41,6 +41,7 @@
 [National Post](https://www.nationalpost.com)\
 [New Statesman](https://www.newstatesman.com)\
 [New York Magazine](https://www.nymag.com)\
+[New Zealand Herald](https://www.nzherald.co.nz)\
 [Nikkei Asian Review](https://asia.nikkei.com)\
 [NRC](https://www.nrc.nl)\
 [Orange County Register](https://www.ocregister.com)\
