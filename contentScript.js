@@ -36,9 +36,13 @@ if (window.location.href.indexOf("bizjournals.com") !== -1) {
     if (paywall) {
       paywall.classList.remove('premium-content');
       paywall.classList.add('full-content');
-      var paras = document.querySelectorAll("p");
+      var paras = paywall.querySelectorAll("p, span, h2, div");
+	  var delClass = "";
 	  for (var i = paras.length; i--;) {
-        paras[i].removeAttribute('class');
+	    if (delClass == "") {
+		  delClass = paras[i].className;
+		}
+        paras[i].classList.remove(delClass);
         paras[i].removeAttribute('style');
       }
     }
