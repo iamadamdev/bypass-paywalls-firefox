@@ -36,6 +36,7 @@ var defaultSites = {
   'National Post': 'nationalpost.com',
   'New Statesman': 'newstatesman.com',
   'New York Magazine': 'nymag.com',
+  'New Zealand Herald': 'nzherald.co.nz',
   'Nikkei Asian Review': 'asia.nikkei.com',
   'NRC': 'nrc.nl',
   'Orange County Register': 'ocregister.com',
