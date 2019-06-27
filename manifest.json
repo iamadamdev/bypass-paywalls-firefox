@@ -84,6 +84,7 @@
     "*://*.nationalpost.com/*",
     "*://*.newstatesman.com/*",
     "*://*.nymag.com/*",
+    "*://*.nzherald.co.nz/*",
     "*://*.asia.nikkei.com/*",
     "*://*.nrc.nl/*",
     "*://*.ocregister.com/*",
@@ -122,5 +123,5 @@
     "*://*.wired.com/*",
     "*://*.thediplomat.com/*"
   ],
-  "version": "1.5.7"
+  "version": "1.5.8"
 }
