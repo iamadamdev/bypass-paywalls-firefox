@@ -27,6 +27,7 @@ var defaultSites = {
   'Investors Chronicle': 'investorschronicle.co.uk',
   'La Repubblica': 'repubblica.it',
   'Le Temps': 'letemps.ch',
+  'Liberation': 'liberation.fr',
   'Los Angeles Times': 'latimes.com',
   'Medium': 'medium.com',
   'Medscape': 'medscape.com',
