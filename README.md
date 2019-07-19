@@ -31,6 +31,7 @@
 [Inc.com](https://www.inc.com)\
 [Investors Chronicle](https://www.investorschronicle.co.uk)\
 [La Repubblica](https://www.repubblica.it)\
+[Le Parisien](https://www.leparisien.fr)\
 [Le Temps](https://www.letemps.ch)\
 [Los Angeles Times](https://www.latimes.com)\
 [Medium](https://www.medium.com)\
