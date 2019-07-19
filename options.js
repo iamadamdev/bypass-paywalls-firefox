@@ -25,6 +25,7 @@ var defaultSites = {
   'Harvard Business Review': 'hbr.org',
   'Inc.com': 'inc.com',
   'Investors Chronicle': 'investorschronicle.co.uk',
+  'Le Parisien': 'leparisien.fr',
   'La Repubblica': 'repubblica.it',
   'Le Temps': 'letemps.ch',
   'Los Angeles Times': 'latimes.com',
