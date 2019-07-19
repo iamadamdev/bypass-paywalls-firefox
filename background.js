@@ -123,6 +123,7 @@ const remove_cookies = [
 'newstatesman.com',
 'spectator.co.uk',
 'towardsdatascience.com',
+'liberation.fr',
 'medium.com',
 'theadvocate.com.au',
 'examiner.com.au',
