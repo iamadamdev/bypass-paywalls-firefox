@@ -32,6 +32,7 @@
 [Investors Chronicle](https://www.investorschronicle.co.uk)\
 [La Repubblica](https://www.repubblica.it)\
 [Le Temps](https://www.letemps.ch)\
+[Libération](https://www.liberation.fr)\
 [Los Angeles Times](https://www.latimes.com)\
 [Medium](https://www.medium.com)\
 [Medscape](https://www.medscape.com)\
