@@ -35,6 +35,7 @@ var defaultSites = {
   'MIT Technology Review': 'technologyreview.com',
   'Mountain View Voice': 'mv-voice.com',
   'National Post': 'nationalpost.com',
+  'Nautilus': 'nautil.us',
   'New Statesman': 'newstatesman.com',
   'New York Magazine': 'nymag.com',
   'Nikkei Asian Review': 'asia.nikkei.com',
@@ -142,6 +143,7 @@ const remove_cookies = [
 'volkskrant.nl',
 'handelsblatt.com',
 'thediplomat.com',
+'nautil.us'
 ]
 
 // Override User-Agent with Googlebot
@@ -233,7 +235,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
   if (!isSiteEnabled(details) || details.url.indexOf("mod=rsswn") !== -1) {
     return;
   }
-  return {cancel: true}; 
+  return {cancel: true};
   },
   {
     urls: ["*://*.theglobeandmail.com/*", "*://*.economist.com/*", "*://*.thestar.com/*"],
@@ -295,7 +297,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(function(details) {
 
   // override User-Agent to use Googlebot
   var useGoogleBot = use_google_bot.filter(function(item) {
-    return typeof item == 'string' && details.url.indexOf(item) > -1;            
+    return typeof item == 'string' && details.url.indexOf(item) > -1;
   }).length > 0;
 
   if (useGoogleBot) {
