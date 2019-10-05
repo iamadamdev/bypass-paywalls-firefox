@@ -1,16 +1,16 @@
 window.localStorage.clear();
 
-
 const getHostName = _ => {
-	let URL = location.hostname;
+	let url = location.hostname;
 	if (location.hostname.startsWith('www.')) {
-		return URL.replace('www.', '');
+		return url.replace('www.', '');
 	}
 
-	return URL;
+	return url;
 };
 
 const urlMatches = (url) => {
+
 	return getHostName() === url;
 };
 
@@ -38,11 +38,9 @@ if (urlMatches('businessinsider.com')) {
 	while (paywall.length > 0) {
 		paywall[0].parentNode.removeChild(paywall[0]);
 	}
-} else {
-	console.log('not busines insider', hostName)
 }
 
-if (getHostName() === 'haaretz.co.il') {
+if (urlMatches('haaretz.co.il')) {
 	const html = document.getElementsByTagName('html');
 	if (html && html.length > 0) {
 		html[0].style['overflow-y'] = 'auto';
@@ -53,7 +51,7 @@ if (getHostName() === 'haaretz.co.il') {
 	}
 }
 
-if (getHostName() === "nzherald.co.nz") !== -1) {
+if (urlMatches('nzherald.co.nz')) {
 	const paywall = document.getElementById(
 		"article-content"
 	);
@@ -78,7 +76,7 @@ if (getHostName() === "nzherald.co.nz") !== -1) {
 	}
 }
 
-if (location.hostname.endsWith('rep.repubblica.it')) {
+if (urlMatches('rep.repubblica.it')) {
 	if (location.href.includes("/pwa/")) {
 		location.href = location.href.replace("/pwa/", "/ws/detail/");
 	}
@@ -95,7 +93,7 @@ if (location.hostname.endsWith('rep.repubblica.it')) {
 	}
 }
 
-if (window.location.href.indexOf("wsj.com") !== -1) {
+if (urlMatches("wsj.com")) {
 	if (location.href.includes('/articles/')) {
 		setTimeout(function () {
 			document.querySelector('.close-btn').click();
@@ -103,7 +101,7 @@ if (window.location.href.indexOf("wsj.com") !== -1) {
 	}
 }
 
-if (window.location.href.indexOf("washingtonpost.com") !== -1) {
+if (urlMatches('washingtonpost.com')) {
 	if (location.href.includes('/gdpr-consent/')) {
 		document.querySelector('.gdpr-consent-container .continue-btn.button.free').click();
 
