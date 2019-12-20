@@ -10,21 +10,21 @@
 [Bloomberg](https://www.bloomberg.com)\
 [Bloomberg Quint](https://www.bloombergquint.com)\
 [Business Insider](https://www.businessinsider.com)\
-[Caixin](https://www.caixinglobal.com)\
+[Caixin Global](https://www.caixinglobal.com)\
 [Chemical & Engineering News](https://cen.acs.org)\
 [Central Western Daily](https://www.centralwesterndaily.com.au)\
 [Chicago Tribune](https://www.chicagotribune.com)\
 [Crain's Chicago Business](https://www.chicagobusiness.com)\
 [Corriere Della Sera](https://www.corriere.it)\
 [Daily Press](https://www.dailypress.com)\
-[DeMorgen](https://demorgen.be)\
+[DeMorgen](https://www.demorgen.be)\
 [Denver Post](https://www.denverpost.com)\
 [De Groene Amsterdammer](https://www.groene.nl)\
 [De Tijd](https://www.tijd.be)\
 [de Volkskrant](https://www.volkskrant.nl)\
 [ET Prime](https://prime.economictimes.indiatimes.com/)\
 [The Economist](https://www.economist.com)\
-[Eindhovens Dagblad](https://ed.nl)\
+[Eindhovens Dagblad](https://www.ed.nl)\
 [Examiner](https://www.examiner.com.au)\
 [Financial Times](https://www.ft.com)\
 [Foreign Policy](https://www.foreignpolicy.com)\
@@ -41,7 +41,7 @@
 [Le Monde](https://www.lemonde.fr)\
 [Le Parisien](http://www.leparisien.fr)\
 [Le Temps](https://www.letemps.ch)\
-[London Review of Books](https://lrb.co.uk)\
+[London Review of Books](https://www.lrb.co.uk)\
 [Los Angeles Times](https://www.latimes.com)\
 [Medium](https://www.medium.com)\
 [Medscape](https://www.medscape.com)\
@@ -84,7 +84,7 @@
 [The New York Times](https://www.nytimes.com)\
 [The New Yorker](https://www.newyorker.com)\
 [The News-Gazette](https://www.news-gazette.com)\
-[The Philadelphia Inquirer](https://inquirer.com)\
+[The Philadelphia Inquirer](https://www.inquirer.com)\
 [The Saturday Paper](https://www.thesaturdaypaper.com.au)\
 [The Spectator](https://www.spectator.co.uk)\
 [The Seattle Times](https://www.seattletimes.com)\
@@ -122,7 +122,7 @@ Usually premium articles cannot be bypassed as they are behind a hard paywall.
 * This add-on works best alongside [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/).
 * If a site doesn't work try turning off uBlock and refreshing.
 
-### Pull Requesets
+### Pull Requests
 * PRs are welcome.
 
 ### Show your support

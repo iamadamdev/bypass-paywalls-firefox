@@ -5,7 +5,7 @@ var defaultSites = {
   'Bloomberg': 'bloomberg.com',
   'Bloomberg Quint': 'bloombergquint.com',
   'Business Insider': 'businessinsider.com',
-  'Caixin': 'caixinglobal.com',
+  'Caixin Global': 'caixinglobal.com',
   'Chemical & Engineering News': 'cen.acs.org',
   'Chicago Tribune': 'chicagotribune.com',
   'Central Western Daily': 'centralwesterndaily.com.au',

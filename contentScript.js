@@ -170,10 +170,14 @@ if (window.location.href.indexOf("nytimes.com") !== -1) {
 }
 
 if (window.location.href.indexOf("caixinglobal.com") !== -1) {
+	const pay_tip = document.querySelectorAll('.cons-pay-tip');	
+    for (let i = 0; i < pay_tip.length; i++) {
+        pay_tip[i].removeAttribute('style');
+    }
     const appContent = document.getElementById('appContent');
     if (appContent) {
         const p_hidden = document.querySelectorAll('p:not([style="display:block;"]');
-        for (var i = 0; i < p_hidden.length; i++) {
+        for (let i = 0; i < p_hidden.length; i++) {
             p_hidden[i].setAttribute('style', 'display:block;');
         }
     }
