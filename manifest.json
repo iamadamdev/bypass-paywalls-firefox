@@ -156,7 +156,8 @@
     "*://*.nknews.org/*",
     "*://*.inquirer.com/*",
     "*://*.indiatimes.com/*",
-    "*://*.leparisien.fr/*"
+    "*://*.leparisien.fr/*",
+    "*://*.lesechos.fr/*"
   ],
   "version": "1.6.3"
 }

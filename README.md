@@ -41,6 +41,7 @@
 [Le Monde](https://www.lemonde.fr)\
 [Le Parisien](http://www.leparisien.fr)\
 [Le Temps](https://www.letemps.ch)\
+[Les Échos](https://www.lesechos.fr)\
 [London Review of Books](https://www.lrb.co.uk)\
 [Los Angeles Times](https://www.latimes.com)\
 [Medium](https://www.medium.com)\
