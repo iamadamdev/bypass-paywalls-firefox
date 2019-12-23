@@ -34,7 +34,6 @@ var defaultSites = {
   'Investors Chronicle': 'investorschronicle.co.uk',
   'La Repubblica': 'repubblica.it',
   'Le Monde': 'lemonde.fr',
-  'Les Echos': 'lesechos.fr',
   'Le Parisien': 'leparisien.fr',
   'Le Temps': 'letemps.ch',
   'Les Echos': 'lesechos.fr', 
