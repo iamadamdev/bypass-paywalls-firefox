@@ -23,7 +23,8 @@
     "*://*.washingtonpost.com/*",
     "*://*.economist.com/*",
     "*://*.the-tls.co.uk/*",
-    "*://*.leparisien.fr/*"
+    "*://*.leparisien.fr/*",
+    "*://*.nrc.nl/*"
       ],
       "js": ["contentScript.js"]
     }
