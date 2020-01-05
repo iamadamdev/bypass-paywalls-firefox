@@ -29,7 +29,8 @@
     "*://*.techinasia.com/*",
     "*://*.newcastleherald.com.au/*",
     "*://*.thestar.com/*",
-    "*://*.afr.com/*"
+    "*://*.afr.com/*",
+    "*://*.theglobeandmail.com/*"
       ],
       "js": ["contentScript.js"]
     }

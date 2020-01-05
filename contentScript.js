@@ -273,6 +273,24 @@ if (window.location.href.indexOf("afr.com") !== -1) {
     });
 }
 
+if (window.location.href.indexOf("theglobeandmail.com") !== -1) {
+    document.addEventListener('DOMContentLoaded', () => {
+        const lazy_image = document.querySelectorAll('.js-lazyimage');
+        for (let i = 0; i < lazy_image.length; i++) {
+            lazy_image[i].classList.remove('js-lazyimage');
+        }
+        const hidden_image = document.querySelectorAll('img');
+        for (let i = 0; i < hidden_image.length; i++) {
+            var src = hidden_image[i].src;
+            if ('src: ' + src.indexOf("image/gif") !== -1) {
+                var data_src = hidden_image[i].getAttribute("data-src");
+                if (data_src)
+                    hidden_image[i].setAttribute('src', data_src);
+            }
+        }
+    });
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();

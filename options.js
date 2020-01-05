@@ -71,7 +71,7 @@ var defaultSites = {
   'The Boston Globe': 'bostonglobe.com',
   'The Business Journals': 'bizjournals.com',
   'The Diplomat': 'thediplomat.com',
-  'The Globe and Mail (javascript disabled)': 'theglobeandmail.com',
+  'The Globe and Mail': 'theglobeandmail.com',
   'The Hindu': 'thehindu.com',
   'The Japan Times': 'japantimes.co.jp',
   'TheMarker': 'themarker.com',
