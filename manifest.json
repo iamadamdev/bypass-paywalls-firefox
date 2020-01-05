@@ -25,7 +25,8 @@
     "*://*.the-tls.co.uk/*",
     "*://*.leparisien.fr/*",
     "*://*.nrc.nl/*",
-    "*://*.theathletic.com/*"
+    "*://*.theathletic.com/*",
+    "*://*.techinasia.com/*"
       ],
       "js": ["contentScript.js"]
     }
@@ -160,7 +161,9 @@
     "*://*.indiatimes.com/*",
     "*://*.leparisien.fr/*",
     "*://*.lesechos.fr/*",
-    "*://*.theathletic.com/*"
+    "*://*.theathletic.com/*",
+    "*://*.techinasia.com/*"
   ],
   "version": "1.6.3"
 }
+

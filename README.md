@@ -64,6 +64,7 @@
 [Scientific American](https://scientificamerican.com)\
 [Statista](https://www.statista.com)\
 [SunSentinel](https://www.sun-sentinel.com)\
+[Tech in Asia]:(https://www.techinasia.com)\
 [Telegraaf](https://telegraaf.nl)\
 [The Advocate](https://www.theadvocate.com.au)\
 [The Age](https://www.theage.com.au)\

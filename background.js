@@ -61,6 +61,7 @@ var defaultSites = {
   'Scientific American': 'scientificamerican.com',
   'Statista': 'statista.com',
   'SunSentinel': 'sun-sentinel.com',
+  'Tech in Asia': 'techinasia.com',
   'Telegraaf': 'telegraaf.nl',
   'The Advocate': 'theadvocate.com.au',
   'The Age': 'theage.com.au',
