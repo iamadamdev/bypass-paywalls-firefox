@@ -111,6 +111,7 @@ const restrictions = {
 const allow_cookies = [
 'ad.nl',
 'asia.nikkei.com',
+'barrons.com',
 'bostonglobe.com',
 'caixinglobal.com',
 'cen.acs.org',
@@ -121,6 +122,8 @@ const allow_cookies = [
 'ed.nl',
 'examiner.com.au',
 'ft.com',
+'haaretz.co.il',
+'haaretz.com',
 'hacked.com',
 'harpers.org',
 'hbr.org',
@@ -134,18 +137,22 @@ const allow_cookies = [
 'nytimes.com',
 'ocregister.com',
 'parool.nl',
+'quora.com',
 'qz.com',
 'scientificamerican.com',
 'spectator.co.uk',
 'telegraaf.nl',
+'telegraph.co.uk',
 'theadvocate.com.au',
 'theage.com.au',
 'theathletic.com',
 'theatlantic.com',
 'theaustralian.com.au',
 'thediplomat.com',
+'themarker.com',
 'themercury.com.au',
 'thestar.com',
+'thetimes.co.uk',
 'towardsdatascience.com',
 'trouw.nl',
 'vn.nl',
@@ -190,7 +197,7 @@ const remove_cookies = [
 'thestar.com',
 'towardsdatascience.com',
 'vn.nl',
-'washingtonpost.com'
+'washingtonpost.com',
 ]
 
 // select specific cookie(s) to hold from remove_cookies domains
