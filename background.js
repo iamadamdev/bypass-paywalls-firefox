@@ -307,7 +307,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
   return {cancel: true};
   },
   {
-    urls: ["*://*.theglobeandmail.com/*", "*://*.thestar.com/*", "*://*.newstatesman.com/*", "*://*.afr.com/*"],
+    urls: ["*://*.theglobeandmail.com/*", "*://*.newstatesman.com/*", "*://*.afr.com/*"],
     types: ["script"]
   },
   ["blocking"]

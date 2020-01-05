@@ -89,7 +89,7 @@ var defaultSites = {
   'The Sydney Morning Herald': 'smh.com.au',
   'The Telegraph': 'telegraph.co.uk',
   'The Times': 'thetimes.co.uk',
-  'The Toronto Star (javascript disabled)': 'thestar.com',
+  'The Toronto Star': 'thestar.com',
   'The Washington Post': 'washingtonpost.com',
   'The Wall Street Journal': 'wsj.com',
   'Times Literary Supplement': 'the-tls.co.uk',

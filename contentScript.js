@@ -248,6 +248,15 @@ if (window.location.href.indexOf("newcastleherald.com.au") !== -1) {
     }
 }
 
+if (window.location.href.indexOf("thestar.com") !== -1) {
+    const paywall = document.querySelector('.basic-paywall-new');
+    removeDOMElement(paywall);
+    const tbc = document.querySelectorAll('.text-block-container');	
+    for (let i = 0; i < tbc.length; i++) {
+        tbc[i].removeAttribute('style');
+    }
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();

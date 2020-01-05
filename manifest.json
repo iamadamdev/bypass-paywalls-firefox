@@ -27,7 +27,8 @@
     "*://*.nrc.nl/*",
     "*://*.theathletic.com/*",
     "*://*.techinasia.com/*",
-    "*://*.newcastleherald.com.au/*"
+    "*://*.newcastleherald.com.au/*",
+    "*://*.thestar.com/*"
       ],
       "js": ["contentScript.js"]
     }
