@@ -63,6 +63,7 @@
 [Quartz](https://qz.com)\
 [Quora](https://www.quora.com)\
 [Scientific American](https://scientificamerican.com)\
+[Scribd](http://scribd.com)\
 [Statista](https://www.statista.com)\
 [SunSentinel](https://www.sun-sentinel.com)\
 [Tech in Asia]:(https://www.techinasia.com)\

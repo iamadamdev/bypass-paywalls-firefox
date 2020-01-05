@@ -58,6 +58,7 @@ var defaultSites = {
   'Quartz': 'qz.com',
   'Quora': 'quora.com',
   'Scientific American': 'scientificamerican.com',  
+  'Scribd (documents only)': 'scribd.com',
   'Statista': 'statista.com',
   'SunSentinel': 'sun-sentinel.com',
   'Tech in Asia': 'techinasia.com',

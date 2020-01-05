@@ -30,7 +30,8 @@
     "*://*.newcastleherald.com.au/*",
     "*://*.thestar.com/*",
     "*://*.afr.com/*",
-    "*://*.theglobeandmail.com/*"
+    "*://*.theglobeandmail.com/*",
+    "*://*.scribd.com/*"
       ],
       "js": ["contentScript.js"]
     }
@@ -166,7 +167,8 @@
     "*://*.leparisien.fr/*",
     "*://*.lesechos.fr/*",
     "*://*.theathletic.com/*",
-    "*://*.techinasia.com/*"
+    "*://*.techinasia.com/*",
+    "*://*.scribd.com/*"
   ],
   "version": "1.6.3"
 }

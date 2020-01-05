@@ -279,6 +279,18 @@ if (window.location.href.indexOf("theglobeandmail.com") !== -1) {
     });
 }
 
+if (window.location.href.indexOf("scribd.com") !== -1) {
+    const blur = document.querySelectorAll('.blurred_page');
+    for (let i = 0; i < blur.length; i++) {
+        blur[i].classList.remove('blurred_page');
+    }
+    const portal = document.querySelector('.between_page_portal_root');
+    const page_module = document.querySelector('.between_page_module');
+    const promo = document.querySelector('.auto__doc_page_webpack_doc_page_body_static_promo_study');
+    const ad = document.querySelector('.auto__explain_scribd_v2_advertisement');
+    removeDOMElement(portal, page_module, promo, ad);
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();
