@@ -258,7 +258,8 @@ const blockedRegexes = {
 'foreignpolicy.com': /.+\.tinypass\.com\/.+/,
 'inquirer.com': /.+\.tinypass\.com\/.+/,
 'spectator.co.uk': /.+\.tinypass\.com\/.+/,
-'newcastleherald.com.au': /.+cdn-au\.piano\.io\/api\/tinypass.+\.js/
+'newcastleherald.com.au': /.+cdn-au\.piano\.io\/api\/tinypass.+\.js/,
+'afr.com': /afr\.com\/assets\/vendorsReactRedux_client.+\.js/
 };
 
 const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
@@ -307,7 +308,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
   return {cancel: true};
   },
   {
-    urls: ["*://*.theglobeandmail.com/*", "*://*.newstatesman.com/*", "*://*.afr.com/*"],
+    urls: ["*://*.theglobeandmail.com/*", "*://*.newstatesman.com/*"],
     types: ["script"]
   },
   ["blocking"]

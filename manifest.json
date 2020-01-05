@@ -28,7 +28,8 @@
     "*://*.theathletic.com/*",
     "*://*.techinasia.com/*",
     "*://*.newcastleherald.com.au/*",
-    "*://*.thestar.com/*"
+    "*://*.thestar.com/*",
+    "*://*.afr.com/*"
       ],
       "js": ["contentScript.js"]
     }

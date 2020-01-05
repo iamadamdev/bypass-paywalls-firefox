@@ -257,6 +257,22 @@ if (window.location.href.indexOf("thestar.com") !== -1) {
     }
 }
 
+if (window.location.href.indexOf("afr.com") !== -1) {
+    document.addEventListener('DOMContentLoaded', () => {
+        const hidden_image = document.querySelectorAll('img');
+        for (let i = 0; i < hidden_image.length; i++) {
+            var src = hidden_image[i].src;
+            if ('src: ' + src.indexOf(".gif") !== -1) {
+                var data_src = hidden_image[i].getAttribute("data-src");
+                if (data_src)
+                    hidden_image[i].setAttribute('src', data_src);
+            }
+        }
+        const plista = document.querySelector('div[data-plista-placement="underArticle_Group"]');
+        removeDOMElement(plista);
+    });
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();
