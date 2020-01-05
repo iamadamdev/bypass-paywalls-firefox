@@ -52,6 +52,7 @@
 [New Statesman](https://www.newstatesman.com)\
 [New York Magazine](https://www.nymag.com)\
 [New Zealand Herald](https://www.nzherald.co.nz)\
+[Newcastle Herald](https://www.newcastleherald.com.au)\
 [Nikkei Asian Review](https://asia.nikkei.com)\
 [NK News](https://www.nknews.org)\
 [NRC](https://www.nrc.nl)\
@@ -76,7 +77,6 @@
 [The Business Journals](https://www.bizjournals.com)\
 [The Diplomat](https://www.thediplomat.com)\
 [The Globe and Mail](https://www.theglobeandmail.com)\
-[The Herald](https://www.theherald.com.au)\
 [The Hindu](https://www.thehindu.com)\
 [The Japan Times](https://www.japantimes.co.jp)\
 [TheMarker](https://www.themarker.com)\

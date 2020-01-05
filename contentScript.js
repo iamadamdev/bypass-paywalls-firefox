@@ -238,6 +238,16 @@ if (window.location.href.indexOf("techinasia.com") !== -1) {
     removeDOMElement(splash_subscribe, paywall_hard);
 }
 
+if (window.location.href.indexOf("newcastleherald.com.au") !== -1) {
+    const subscribe_truncate = document.querySelector('.subscribe-truncate');
+    if (subscribe_truncate)
+        subscribe_truncate.classList.remove('subscribe-truncate');
+    const subscriber_hider = document.querySelectorAll('.subscriber-hider');
+    for (let i = 0; i < subscriber_hider.length; i++) {
+        subscriber_hider[i].classList.remove('subscriber-hider');
+    }
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();

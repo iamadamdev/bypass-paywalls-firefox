@@ -48,10 +48,13 @@ var defaultSites = {
   'National Post': 'nationalpost.com',
   'New Statesman': 'newstatesman.com',
   'New York Magazine': 'nymag.com',
+  'New Zealand Herald': 'nzherald.co.nz',
+  'Newscastle Herald': 'newcastleherald.com.au',
   'Nikkei Asian Review': 'asia.nikkei.com',
   'NK News': 'nknews.org',
   'NRC': 'nrc.nl',
   'New Zealand Herald': 'nzherald.co.nz',
+  'Newcastle Herald': 'newcastleherald.com.au',
   'Orange County Register': 'ocregister.com',
   'Orlando Sentinel': 'orlandosentinel.com',
   'Palo Alto Online': 'paloaltoonline.com',
@@ -256,7 +259,8 @@ const blockedRegexes = {
 'bostonglobe.com': /meter\.bostonglobe\.com\/js\/.+/,
 'foreignpolicy.com': /.+\.tinypass\.com\/.+/,
 'inquirer.com': /.+\.tinypass\.com\/.+/,
-'spectator.co.uk': /.+\.tinypass\.com\/.+/
+'spectator.co.uk': /.+\.tinypass\.com\/.+/,
+'newcastleherald.com.au': /.+cdn-au\.piano\.io\/api\/tinypass.+\.js/
 };
 
 const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"

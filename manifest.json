@@ -26,7 +26,8 @@
     "*://*.leparisien.fr/*",
     "*://*.nrc.nl/*",
     "*://*.theathletic.com/*",
-    "*://*.techinasia.com/*"
+    "*://*.techinasia.com/*",
+    "*://*.newcastleherald.com.au/*"
       ],
       "js": ["contentScript.js"]
     }
@@ -117,7 +118,7 @@
     "*://*.bostonglobe.com/*",
     "*://*.bizjournals.com/*",
     "*://*.theglobeandmail.com/*",
-    "*://*.theherald.com.au/*",
+    "*://*.newcastleherald.com.au/*",
     "*://*.japantimes.co.jp/*",
     "*://*.themarker.com/*",
     "*://*.mercurynews.com/*",
@@ -166,4 +167,3 @@
   ],
   "version": "1.6.3"
 }
-
