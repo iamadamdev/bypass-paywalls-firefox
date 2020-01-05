@@ -32,7 +32,11 @@
     "*://*.afr.com/*",
     "*://*.theglobeandmail.com/*",
     "*://*.scribd.com/*",
-    "*://*.technologyreview.com/*"
+    "*://*.technologyreview.com/*",
+    "*://*.thetimes.co.uk/*",
+    "*://*.haaretz.com/*",
+    "*://*.asia.nikkei.com/*",
+    "*://*.hbr.org/*"
       ],
       "js": ["contentScript.js"]
     }

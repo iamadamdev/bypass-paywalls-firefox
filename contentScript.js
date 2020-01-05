@@ -118,9 +118,9 @@ if (window.location.href.indexOf("bloomberg.com") !== -1) {
         if (fence){
             fence.classList.remove('fence-body');
         }
-        const paywall = document.getElementById('paywall-banner');
-        removeDOMElement(paywall);
     });
+    const banner = document.getElementById('paywall-banner');
+    removeDOMElement(banner);
 }
 
 if (window.location.href.indexOf('telegraaf.nl') !== -1) {
@@ -297,6 +297,26 @@ if (window.location.href.indexOf("technologyreview.com") !== -1) {
         read_story.click();
     const meter = document.querySelector('.meter');
     removeDOMElement(meter);
+}
+
+if (window.location.href.indexOf("thetimes.co.uk") !== -1) {
+    const block = document.querySelector('.subscription-block');
+    removeDOMElement(block);
+}
+
+if (window.location.href.indexOf("haaretz.com") !== -1) {
+    const popup = document.querySelector('.footer-ruler');
+    removeDOMElement(popup);
+}
+
+if (window.location.href.indexOf("asia.nikkei.com") !== -1) {
+    const popup = document.querySelector('.pw-widget--popup');
+    removeDOMElement(popup);
+}
+
+if (window.location.href.indexOf("hbr.org") !== -1) {
+    const popup = document.querySelector('.persistent-banner');
+    removeDOMElement(popup);
 }
 
 function removeDOMElement(...elements) {
