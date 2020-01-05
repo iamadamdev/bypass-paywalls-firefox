@@ -201,18 +201,6 @@ if (window.location.href.indexOf("the-tls.co.uk") !== -1) {
         removeDOMElement(paywall);
 }
 
-if (window.location.href.indexOf("leparisien.fr") !== -1) {
-        window.removeEventListener('scroll', this.scrollListener);
-        const paywall = document.querySelector('.relative.piano-paywall.below_nav.sticky');
-        removeDOMElement(paywall);
-        setTimeout(function () {
-            var content = document.getElementsByClassName('content');
-            for (var i = 0; i < content.length; i++) {
-                content[i].removeAttribute("style");
-            }
-        }, 300); // Delay (in milliseconds)
-}
-
 if (window.location.href.indexOf("nrc.nl") !== -1) {
     const paywall = document.querySelector('.has-paywall');
     if (paywall)
