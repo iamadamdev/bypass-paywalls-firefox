@@ -222,6 +222,12 @@ if (window.location.href.indexOf("nrc.nl") !== -1) {
         paywall_overlay.classList.remove("has-paywall-overlay");
 }
 
+if (window.location.href.indexOf("theathletic.com") !== -1) {
+    const banner = document.querySelector('.border-bottom-cc');
+    const subscribe = document.querySelector('.subscribe-ad-text');
+    removeDOMElement(banner, subscribe);
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();

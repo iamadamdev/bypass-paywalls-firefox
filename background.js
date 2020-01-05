@@ -64,6 +64,7 @@ var defaultSites = {
   'Telegraaf': 'telegraaf.nl',
   'The Advocate': 'theadvocate.com.au',
   'The Age': 'theage.com.au',
+  'The Athletic': 'theathletic.com',
   'The Atlantic': 'theatlantic.com',
   'The Australian': 'theaustralian.com.au',
   'The Australian Financial Review': 'afr.com',
@@ -139,6 +140,7 @@ const allow_cookies = [
 'telegraaf.nl',
 'theadvocate.com.au',
 'theage.com.au',
+'theathletic.com',
 'theatlantic.com',
 'theaustralian.com.au',
 'thediplomat.com',
@@ -211,19 +213,20 @@ const remove_cookies_select_drop = {
 // Override User-Agent with Googlebot
 const use_google_bot = [
 'barrons.com',
+'haaretz.co.il',
+'haaretz.com',
 'lemonde.fr',
+'nknews.org',
 'nytimes.com',
+'prime.economictimes.indiatimes.com',
 'quora.com',
 'telegraph.co.uk',
+'theathletic.com',
 'theaustralian.com.au',
+'themarker.com',
 'themercury.com.au',
 'thetimes.co.uk',
 'wsj.com',
-'haaretz.co.il',
-'haaretz.com',
-'themarker.com',
-'nknews.org',
-'prime.economictimes.indiatimes.com'
 ]
 
 function setDefaultOptions() {
