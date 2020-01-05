@@ -31,7 +31,8 @@
     "*://*.thestar.com/*",
     "*://*.afr.com/*",
     "*://*.theglobeandmail.com/*",
-    "*://*.scribd.com/*"
+    "*://*.scribd.com/*",
+    "*://*.technologyreview.com/*"
       ],
       "js": ["contentScript.js"]
     }

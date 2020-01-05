@@ -291,6 +291,14 @@ if (window.location.href.indexOf("scribd.com") !== -1) {
     removeDOMElement(portal, page_module, promo, ad);
 }
 
+if (window.location.href.indexOf("technologyreview.com") !== -1) {
+    const read_story = document.querySelector('.storyExpanderButton');
+    if (read_story)
+        read_story.click();
+    const meter = document.querySelector('.meter');
+    removeDOMElement(meter);
+}
+
 function removeDOMElement(...elements) {
     for (let element of elements) {
         if (element) element.remove();
