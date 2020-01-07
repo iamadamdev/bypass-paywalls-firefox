@@ -173,7 +173,8 @@
     "*://*.lesechos.fr/*",
     "*://*.theathletic.com/*",
     "*://*.techinasia.com/*",
-    "*://*.scribd.com/*"
+    "*://*.scribd.com/*",
+    "*://*.lecho.be/*"
   ],
   "version": "1.6.3"
 }

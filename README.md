@@ -37,6 +37,7 @@
 [Harvard Business Review](https://www.hbr.org)\
 [Inc.com](https://www.inc.com)\
 [Investors Chronicle](https://www.investorschronicle.co.uk)\
+[L'Echo](https://www.lecho.be)\
 [La Repubblica](https://www.repubblica.it)\
 [Le Monde](https://www.lemonde.fr)\
 [Le Parisien](http://www.leparisien.fr)\

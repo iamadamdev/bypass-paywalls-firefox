@@ -33,6 +33,7 @@ var defaultSites = {
   'Harvard Business Review': 'hbr.org',
   'Inc.com': 'inc.com',
   'Investors Chronicle': 'investorschronicle.co.uk',
+  'L\'Echo': 'lecho.be',
   'La Repubblica': 'repubblica.it',
   'Le Monde': 'lemonde.fr',
   'Le Parisien': 'leparisien.fr',
@@ -130,6 +131,7 @@ const allow_cookies = [
 'hacked.com',
 'harpers.org',
 'hbr.org',
+'lecho.be',
 'lemonde.fr',
 'lesechos.fr',
 'letemps.ch',
@@ -183,6 +185,7 @@ const remove_cookies = [
 'hacked.com',
 'harpers.org',
 'hbr.org',
+'lecho.be',
 'lesechos.fr',
 'letemps.ch',
 'medium.com',
@@ -263,7 +266,8 @@ const blockedRegexes = {
 'newcastleherald.com.au': /.+cdn-au\.piano\.io\/api\/tinypass.+\.js/,
 'afr.com': /afr\.com\/assets\/vendorsReactRedux_client.+\.js/,
 'theglobeandmail.com': /theglobeandmail\.com\/pb\/resources\/scripts\/build\/chunk-bootstraps\/.+\.js/,
-'leparisien.fr': /.+\.tinypass\.com\/.+/
+'leparisien.fr': /.+\.tinypass\.com\/.+/,
+'lesechos.fr': /.+\.tinypass\.com\/.+/
 };
 
 const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
