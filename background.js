@@ -231,7 +231,6 @@ const use_google_bot = [
 'haaretz.com',
 'lemonde.fr',
 'nknews.org',
-'nytimes.com',
 'prime.economictimes.indiatimes.com',
 'quora.com',
 'telegraph.co.uk',
@@ -267,7 +266,8 @@ const blockedRegexes = {
 'afr.com': /afr\.com\/assets\/vendorsReactRedux_client.+\.js/,
 'theglobeandmail.com': /theglobeandmail\.com\/pb\/resources\/scripts\/build\/chunk-bootstraps\/.+\.js/,
 'leparisien.fr': /.+\.tinypass\.com\/.+/,
-'lesechos.fr': /.+\.tinypass\.com\/.+/
+'lesechos.fr': /.+\.tinypass\.com\/.+/,
+'nytimes.com': /(.+meter-svc\.nytimes\.com\/meter\.js.+|.+mwcm\.nyt\.com\/.+\.js)/
 };
 
 const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
