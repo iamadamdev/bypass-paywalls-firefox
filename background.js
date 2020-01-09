@@ -219,7 +219,6 @@ const remove_cookies_select_drop = {
 	'bostonglobe.com': ['FMPaywall'],
 	'caixinglobal.com': ['CAIXINGLB_LOGIN_UUID'],
 	'demorgen.be': ['TID_ID'],
-	'economist.com': ['rvuuid'],
 	'ed.nl': ['temptationTrackingId'],
 	'nrc.nl': ['counter']
 }
@@ -256,7 +255,7 @@ const blockedRegexes = {
 'thenation.com': /thenation\.com\/.+\/paywall-script\.php/,
 'haaretz.co.il': /haaretz\.co\.il\/htz\/js\/inter\.js/,
 'nzherald.co.nz': /nzherald\.co\.nz\/.+\/headjs\/.+\.js/,
-'economist.com': /.+\.tinypass\.com\/.+/,
+'economist.com': /(.+\.tinypass\.com\/.+|economist\.com\/_next\/static\/runtime\/main.+\.js)/,
 'lrb.co.uk': /.+\.tinypass\.com\/.+/,
 'bostonglobe.com': /meter\.bostonglobe\.com\/js\/.+/,
 'foreignpolicy.com': /.+\.tinypass\.com\/.+/,
