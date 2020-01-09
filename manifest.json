@@ -36,7 +36,8 @@
     "*://*.thetimes.co.uk/*",
     "*://*.haaretz.com/*",
     "*://*.asia.nikkei.com/*",
-    "*://*.hbr.org/*"
+    "*://*.hbr.org/*",
+    "*://*.bloombergquint.com/*"
       ],
       "js": ["contentScript.js"]
     }
@@ -174,7 +175,9 @@
     "*://*.theathletic.com/*",
     "*://*.techinasia.com/*",
     "*://*.scribd.com/*",
-    "*://*.lecho.be/*"
+    "*://*.lecho.be/*",
+    "*://*.bloombergquint.com/*",
+    "*://*.statista.com/*"
   ],
   "version": "1.6.3"
 }
