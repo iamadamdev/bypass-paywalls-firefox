@@ -272,10 +272,13 @@ if (window.location.href.indexOf("theglobeandmail.com") !== -1) {
         const hidden_image = document.querySelectorAll('img');
         for (let i = 0; i < hidden_image.length; i++) {
             var src = hidden_image[i].src;
-            if ('src: ' + src.indexOf("image/gif") !== -1) {
+            if (src.indexOf("data:image/gif") !== -1) {
                 var data_src = hidden_image[i].getAttribute("data-src");
                 if (data_src)
                     hidden_image[i].setAttribute('src', data_src);
+                var data_bg = hidden_image[i].getAttribute("data-bg");
+                if (data_bg)
+                    hidden_image[i].setAttribute('src', data_bg);
             }
         }
     });
