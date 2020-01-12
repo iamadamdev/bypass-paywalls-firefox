@@ -23,21 +23,7 @@
     "*://*.washingtonpost.com/*",
     "*://*.economist.com/*",
     "*://*.the-tls.co.uk/*",
-    "*://*.leparisien.fr/*",
-    "*://*.nrc.nl/*",
-    "*://*.theathletic.com/*",
-    "*://*.techinasia.com/*",
-    "*://*.newcastleherald.com.au/*",
-    "*://*.thestar.com/*",
-    "*://*.afr.com/*",
-    "*://*.theglobeandmail.com/*",
-    "*://*.scribd.com/*",
-    "*://*.technologyreview.com/*",
-    "*://*.thetimes.co.uk/*",
-    "*://*.haaretz.com/*",
-    "*://*.asia.nikkei.com/*",
-    "*://*.hbr.org/*",
-    "*://*.bloombergquint.com/*"
+    "*://*.leparisien.fr/*"
       ],
       "js": ["contentScript.js"]
     }
@@ -128,7 +114,7 @@
     "*://*.bostonglobe.com/*",
     "*://*.bizjournals.com/*",
     "*://*.theglobeandmail.com/*",
-    "*://*.newcastleherald.com.au/*",
+    "*://*.theherald.com.au/*",
     "*://*.japantimes.co.jp/*",
     "*://*.themarker.com/*",
     "*://*.mercurynews.com/*",
@@ -170,14 +156,7 @@
     "*://*.nknews.org/*",
     "*://*.inquirer.com/*",
     "*://*.indiatimes.com/*",
-    "*://*.leparisien.fr/*",
-    "*://*.lesechos.fr/*",
-    "*://*.theathletic.com/*",
-    "*://*.techinasia.com/*",
-    "*://*.scribd.com/*",
-    "*://*.lecho.be/*",
-    "*://*.bloombergquint.com/*",
-    "*://*.statista.com/*"
+    "*://*.leparisien.fr/*"
   ],
   "version": "1.6.3"
 }

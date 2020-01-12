@@ -10,21 +10,21 @@
 [Bloomberg](https://www.bloomberg.com)\
 [Bloomberg Quint](https://www.bloombergquint.com)\
 [Business Insider](https://www.businessinsider.com)\
-[Caixin Global](https://www.caixinglobal.com)\
+[Caixin](https://www.caixinglobal.com)\
 [Chemical & Engineering News](https://cen.acs.org)\
 [Central Western Daily](https://www.centralwesterndaily.com.au)\
 [Chicago Tribune](https://www.chicagotribune.com)\
 [Crain's Chicago Business](https://www.chicagobusiness.com)\
 [Corriere Della Sera](https://www.corriere.it)\
 [Daily Press](https://www.dailypress.com)\
-[DeMorgen](https://www.demorgen.be)\
+[DeMorgen](https://demorgen.be)\
 [Denver Post](https://www.denverpost.com)\
 [De Groene Amsterdammer](https://www.groene.nl)\
 [De Tijd](https://www.tijd.be)\
 [de Volkskrant](https://www.volkskrant.nl)\
 [ET Prime](https://prime.economictimes.indiatimes.com/)\
 [The Economist](https://www.economist.com)\
-[Eindhovens Dagblad](https://www.ed.nl)\
+[Eindhovens Dagblad](https://ed.nl)\
 [Examiner](https://www.examiner.com.au)\
 [Financial Times](https://www.ft.com)\
 [Foreign Policy](https://www.foreignpolicy.com)\
@@ -37,13 +37,11 @@
 [Harvard Business Review](https://www.hbr.org)\
 [Inc.com](https://www.inc.com)\
 [Investors Chronicle](https://www.investorschronicle.co.uk)\
-[L'Echo](https://www.lecho.be)\
 [La Repubblica](https://www.repubblica.it)\
 [Le Monde](https://www.lemonde.fr)\
 [Le Parisien](http://www.leparisien.fr)\
 [Le Temps](https://www.letemps.ch)\
-[Les Échos](https://www.lesechos.fr)\
-[London Review of Books](https://www.lrb.co.uk)\
+[London Review of Books](https://lrb.co.uk)\
 [Los Angeles Times](https://www.latimes.com)\
 [Medium](https://www.medium.com)\
 [Medscape](https://www.medscape.com)\
@@ -53,7 +51,6 @@
 [New Statesman](https://www.newstatesman.com)\
 [New York Magazine](https://www.nymag.com)\
 [New Zealand Herald](https://www.nzherald.co.nz)\
-[Newcastle Herald](https://www.newcastleherald.com.au)\
 [Nikkei Asian Review](https://asia.nikkei.com)\
 [NK News](https://www.nknews.org)\
 [NRC](https://www.nrc.nl)\
@@ -64,14 +61,11 @@
 [Quartz](https://qz.com)\
 [Quora](https://www.quora.com)\
 [Scientific American](https://scientificamerican.com)\
-[Scribd](http://scribd.com)\
 [Statista](https://www.statista.com)\
 [SunSentinel](https://www.sun-sentinel.com)\
-[Tech in Asia]:(https://www.techinasia.com)\
 [Telegraaf](https://telegraaf.nl)\
 [The Advocate](https://www.theadvocate.com.au)\
 [The Age](https://www.theage.com.au)\
-[The Athletic](https://theathletic.com)\
 [The Atlantic](https://www.theatlantic.com)\
 [The Australian](https://www.theaustralian.com.au)\
 [The Australian Financial Review](https://www.afr.com)\
@@ -79,6 +73,7 @@
 [The Business Journals](https://www.bizjournals.com)\
 [The Diplomat](https://www.thediplomat.com)\
 [The Globe and Mail](https://www.theglobeandmail.com)\
+[The Herald](https://www.theherald.com.au)\
 [The Hindu](https://www.thehindu.com)\
 [The Japan Times](https://www.japantimes.co.jp)\
 [TheMarker](https://www.themarker.com)\
@@ -89,7 +84,7 @@
 [The New York Times](https://www.nytimes.com)\
 [The New Yorker](https://www.newyorker.com)\
 [The News-Gazette](https://www.news-gazette.com)\
-[The Philadelphia Inquirer](https://www.inquirer.com)\
+[The Philadelphia Inquirer](https://inquirer.com)\
 [The Saturday Paper](https://www.thesaturdaypaper.com.au)\
 [The Spectator](https://www.spectator.co.uk)\
 [The Seattle Times](https://www.seattletimes.com)\

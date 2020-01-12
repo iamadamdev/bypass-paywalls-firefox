@@ -7,7 +7,7 @@ var defaultSites = {
   'Bloomberg': 'bloomberg.com',
   'Bloomberg Quint': 'bloombergquint.com',
   'Business Insider': 'businessinsider.com',
-  'Caixin Global': 'caixinglobal.com',
+  'Caixin': 'caixinglobal.com',
   'Chemical & Engineering News': 'cen.acs.org',
   'Chicago Tribune': 'chicagotribune.com',
   'Central Western Daily': 'centralwesterndaily.com.au',
@@ -22,6 +22,7 @@ var defaultSites = {
   'ET Prime': 'prime.economictimes.indiatimes.com',
   'The Economist': 'economist.com',
   'Eindhovens Dagblad': 'ed.nl',
+  'Examiner': 'examiner.com.au',
   'Financial Times': 'ft.com',
   'Foreign Policy': 'foreignpolicy.com',
   'Glassdoor': 'glassdoor.com',
@@ -33,12 +34,10 @@ var defaultSites = {
   'Harvard Business Review': 'hbr.org',
   'Inc.com': 'inc.com',
   'Investors Chronicle': 'investorschronicle.co.uk',
-  'L\'Echo': 'lecho.be',
   'La Repubblica': 'repubblica.it',
   'Le Monde': 'lemonde.fr',
   'Le Parisien': 'leparisien.fr',
   'Le Temps': 'letemps.ch',
-  'Les Echos': 'lesechos.fr', 
   'London Review of Books': 'lrb.co.uk',
   'Los Angeles Times': 'latimes.com',
   'Medium': 'medium.com',
@@ -48,11 +47,10 @@ var defaultSites = {
   'National Post': 'nationalpost.com',
   'New Statesman': 'newstatesman.com',
   'New York Magazine': 'nymag.com',
-  'New Zealand Herald': 'nzherald.co.nz',
-  'Newcastle Herald': 'newcastleherald.com.au',
   'Nikkei Asian Review': 'asia.nikkei.com',
   'NK News': 'nknews.org',
   'NRC': 'nrc.nl',
+  'New Zealand Herald': 'nzherald.co.nz',
   'Orange County Register': 'ocregister.com',
   'Orlando Sentinel': 'orlandosentinel.com',
   'Palo Alto Online': 'paloaltoonline.com',
@@ -60,21 +58,17 @@ var defaultSites = {
   'Quartz': 'qz.com',
   'Quora': 'quora.com',
   'Scientific American': 'scientificamerican.com',
-  'Scribd': 'scribd.com',
   'Statista': 'statista.com',
   'SunSentinel': 'sun-sentinel.com',
-  'Tech in Asia': 'techinasia.com',
   'Telegraaf': 'telegraaf.nl',
   'The Advocate': 'theadvocate.com.au',
   'The Age': 'theage.com.au',
-  'The Athletic': 'theathletic.com',
   'The Atlantic': 'theatlantic.com',
   'The Australian': 'theaustralian.com.au',
   'The Australian Financial Review': 'afr.com',
   'The Boston Globe': 'bostonglobe.com',
   'The Business Journals': 'bizjournals.com',
   'The Diplomat': 'thediplomat.com',
-  'The Examiner': 'examiner.com.au',
   'The Globe and Mail': 'theglobeandmail.com',
   'The Herald': 'theherald.com.au',
   'The Hindu': 'thehindu.com',
@@ -115,9 +109,7 @@ const restrictions = {
 const allow_cookies = [
 'ad.nl',
 'asia.nikkei.com',
-'barrons.com',
 'bostonglobe.com',
-'caixinglobal.com',
 'cen.acs.org',
 'chicagobusiness.com',
 'demorgen.be',
@@ -126,15 +118,10 @@ const allow_cookies = [
 'ed.nl',
 'examiner.com.au',
 'ft.com',
-'haaretz.co.il',
-'haaretz.com',
 'hacked.com',
-'handelsblatt.com',
 'harpers.org',
 'hbr.org',
-'lecho.be',
 'lemonde.fr',
-'lesechos.fr',
 'letemps.ch',
 'medium.com',
 'mercurynews.com',
@@ -143,23 +130,17 @@ const allow_cookies = [
 'nytimes.com',
 'ocregister.com',
 'parool.nl',
-'quora.com',
 'qz.com',
 'scientificamerican.com',
-'scribd.com',
 'spectator.co.uk',
 'telegraaf.nl',
-'telegraph.co.uk',
 'theadvocate.com.au',
 'theage.com.au',
-'theathletic.com',
 'theatlantic.com',
 'theaustralian.com.au',
 'thediplomat.com',
-'themarker.com',
 'themercury.com.au',
 'thestar.com',
-'thetimes.co.uk',
 'towardsdatascience.com',
 'trouw.nl',
 'vn.nl',
@@ -174,7 +155,6 @@ const remove_cookies = [
 'asia.nikkei.com',
 'bloombergquint.com',
 'bostonglobe.com',
-'caixinglobal.com',
 'cen.acs.org',
 'chicagobusiness.com',
 'demorgen.be',
@@ -186,13 +166,12 @@ const remove_cookies = [
 'hacked.com',
 'harpers.org',
 'hbr.org',
-'lecho.be',
-'lesechos.fr',
 'letemps.ch',
 'medium.com',
 'mercurynews.com',
 'newstatesman.com',
 'nymag.com',
+'nytimes.com',
 'ocregister.com',
 'qz.com',
 'scientificamerican.com',
@@ -205,7 +184,7 @@ const remove_cookies = [
 'thestar.com',
 'towardsdatascience.com',
 'vn.nl',
-'washingtonpost.com',
+'washingtonpost.com'
 ]
 
 // select specific cookie(s) to hold from remove_cookies domains
@@ -218,8 +197,8 @@ const remove_cookies_select_hold = {
 const remove_cookies_select_drop = {
 	'ad.nl': ['temptationTrackingId'],
 	'bostonglobe.com': ['FMPaywall'],
-	'caixinglobal.com': ['CAIXINGLB_LOGIN_UUID'],
 	'demorgen.be': ['TID_ID'],
+	'economist.com': ['rvuuid'],
 	'ed.nl': ['temptationTrackingId'],
 	'nrc.nl': ['counter']
 }
@@ -227,20 +206,19 @@ const remove_cookies_select_drop = {
 // Override User-Agent with Googlebot
 const use_google_bot = [
 'barrons.com',
-'haaretz.co.il',
-'haaretz.com',
-'handelsblatt.com',
 'lemonde.fr',
-'nknews.org',
-'prime.economictimes.indiatimes.com',
+'nytimes.com',
 'quora.com',
 'telegraph.co.uk',
-'theathletic.com',
 'theaustralian.com.au',
-'themarker.com',
 'themercury.com.au',
 'thetimes.co.uk',
 'wsj.com',
+'haaretz.co.il',
+'haaretz.com',
+'themarker.com',
+'nknews.org',
+'prime.economictimes.indiatimes.com'
 ]
 
 function setDefaultOptions() {
@@ -257,18 +235,12 @@ const blockedRegexes = {
 'thenation.com': /thenation\.com\/.+\/paywall-script\.php/,
 'haaretz.co.il': /haaretz\.co\.il\/htz\/js\/inter\.js/,
 'nzherald.co.nz': /nzherald\.co\.nz\/.+\/headjs\/.+\.js/,
-'economist.com': /(.+\.tinypass\.com\/.+|economist\.com\/_next\/static\/runtime\/main.+\.js)/,
+'economist.com': /.+\.tinypass\.com\/.+/,
 'lrb.co.uk': /.+\.tinypass\.com\/.+/,
 'bostonglobe.com': /meter\.bostonglobe\.com\/js\/.+/,
 'foreignpolicy.com': /.+\.tinypass\.com\/.+/,
 'inquirer.com': /.+\.tinypass\.com\/.+/,
-'spectator.co.uk': /.+\.tinypass\.com\/.+/,
-'newcastleherald.com.au': /.+cdn-au\.piano\.io\/api\/tinypass.+\.js/,
-'afr.com': /afr\.com\/assets\/vendorsReactRedux_client.+\.js/,
-'theglobeandmail.com': /theglobeandmail\.com\/pb\/resources\/scripts\/build\/chunk-bootstraps\/.+\.js/,
-'leparisien.fr': /.+\.tinypass\.com\/.+/,
-'lesechos.fr': /.+\.tinypass\.com\/.+/,
-'nytimes.com': /(.+meter-svc\.nytimes\.com\/meter\.js.+|.+mwcm\.nyt\.com\/.+\.js)/
+'spectator.co.uk': /.+\.tinypass\.com\/.+/
 };
 
 const userAgentDesktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
@@ -310,14 +282,14 @@ browser.runtime.onInstalled.addListener(function(details) {
 });
 
 // Disable javascript for these sites
-browser.webRequest.onBeforeRequest.addListener(function(details) {
-  if (!isSiteEnabled(details)) {
+chrome.webRequest.onBeforeRequest.addListener(function(details) {
+  if (!isSiteEnabled(details) || details.url.indexOf("mod=rsswn") !== -1) {
     return;
   }
   return {cancel: true};
   },
   {
-    urls: ["*://*.newstatesman.com/*"],
+    urls: ["*://*.theglobeandmail.com/*", "*://*.thestar.com/*", "*://*.newstatesman.com/*", "*://*.afr.com/*"],
     types: ["script"]
   },
   ["blocking"]
@@ -341,9 +313,6 @@ browser.webRequest.onBeforeSendHeaders.addListener(function(details) {
 				// allow BG paywall-script to set cookies in homepage/sections (else no article-text)
 				if (details.url.indexOf('meter.bostonglobe.com/js/') !== -1 && (header_referer === 'https://www.bostonglobe.com/' 
 						|| header_referer.indexOf('/?p1=BGHeader_') !== -1  || header_referer.indexOf('/?p1=BGMenu_') !== -1)) {
-					break;
-				} else if (header_referer.indexOf('theglobeandmail.com') !== -1 && !(header_referer.indexOf('/article-') !== -1)) {
-					browser.webRequest.handlerBehaviorChanged(function () {});
 					break;
 				}
 				return { cancel: true };
