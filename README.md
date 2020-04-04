@@ -4,6 +4,7 @@
 
 ### Bypass the following sites' paywalls with this extension
 
+[AdelaideNow/The Advertiser](https://www.adelaidenow.com.au)\
 [Algemeen Dagblad](https://www.ad.nl)\
 [Baltimore Sun](https://www.baltimoresun.com)\
 [Barron's](https://www.barrons.com)\
