@@ -169,6 +169,7 @@
     "*://*.piano.io/*",
     "*://*.outbrain.com/*",
     "*://*.theathletic.com/*"
+    "*://*.adelaidenow.com.au/*"
   ],
   "version": "1.6.9"
 }
