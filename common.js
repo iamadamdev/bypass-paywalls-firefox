@@ -1,4 +1,5 @@
 const defaultSites = {
+    'AdelaideNow/The Advertiser': 'adelaidenow.com.au',
     'Algemeen Dagblad': 'ad.nl',
     'Baltimore Sun': 'baltimoresun.com',
     'Barron\'s': 'barrons.com',
