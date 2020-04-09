@@ -1,7 +1,7 @@
 ---
 name: New site request template
 about: New site request
-title: 'New site request: [site here]'
+title: 'New site request: [https://wyborcza.pl/]'
 labels: new site request
 assignees: ''
 
