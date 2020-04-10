@@ -58,6 +58,7 @@
 [Orlando Sentinel](https://www.orlandosentinel.com)\
 [Palo Alto Online](https://www.paloaltoonline.com)\
 [Parool](https://www.parool.nl)\
+[Philosophy Now](https://philosophynow.org/)\
 [Quartz](https://qz.com)\
 [Quora](https://www.quora.com)\
 [Scientific American](https://scientificamerican.com)\
