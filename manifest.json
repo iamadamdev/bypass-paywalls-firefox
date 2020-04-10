@@ -168,7 +168,8 @@
     "*://*.poool.fr/*",
     "*://*.piano.io/*",
     "*://*.outbrain.com/*",
-    "*://*.theathletic.com/*"
+    "*://*.theathletic.com/*",
+    "*://*.philosophynow.org/*"
   ],
   "version": "1.6.9"
 }
