@@ -178,7 +178,7 @@ if (window.location.href.indexOf('ad.nl') !== -1 || window.location.href.indexOf
 }
 
 if (window.location.href.indexOf("parool.nl") !== -1 || window.location.href.indexOf("trouw.nl") !== -1 || window.location.href.indexOf("volkskrant.nl") !== -1
-    || window.location.href.indexOf("demorgen.be") !== -1) {
+    || window.location.href.indexOf("demorgen.be") !== -1 || window.location.href.indexOf("humo.be") !== -1) {
     document.addEventListener('DOMContentLoaded', () => {
         const paywall = document.querySelector('div[data-temptation-position="ARTICLE_BOTTOM"]');
         const hidden_section = document.querySelector('div[data-temptation-position="ARTICLE_INLINE"]');
