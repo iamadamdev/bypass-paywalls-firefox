@@ -59,7 +59,6 @@ const remove_cookies = [
 'bostonglobe.com',
 'cen.acs.org',
 'chicagobusiness.com',
-'demorgen.be',
 'denverpost.com',
 'economist.com',
 'ed.nl',
@@ -99,7 +98,6 @@ const remove_cookies_select_hold = {
 const remove_cookies_select_drop = {
 	'ad.nl': ['temptationTrackingId'],
 	'bostonglobe.com': ['FMPaywall'],
-	'demorgen.be': ['TID_ID'],
 	'economist.com': ['rvuuid'],
 	'ed.nl': ['temptationTrackingId'],
 	'nrc.nl': ['counter']
