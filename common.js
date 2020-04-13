@@ -52,7 +52,7 @@ const defaultSites = {
     'Orange County Register': 'ocregister.com',
     'Orlando Sentinel': 'orlandosentinel.com',
     'Palo Alto Online': 'paloaltoonline.com',
-    'Parool': 'philosophynow.org/',
+    'Parool': 'philosophynow.org',
     'Philosophy Now': 'parool.nl',
     'Quartz': 'qz.com',
     'Quora': 'quora.com',
