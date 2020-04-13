@@ -22,6 +22,7 @@ const allow_cookies = [
 'hacked.com',
 'harpers.org',
 'hbr.org',
+'humo.be',
 'lemonde.fr',
 'medium.com',
 'mercurynews.com',
