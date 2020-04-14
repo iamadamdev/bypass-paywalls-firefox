@@ -57,8 +57,8 @@
 [Orange County Register](https://www.ocregister.com)\
 [Orlando Sentinel](https://www.orlandosentinel.com)\
 [Palo Alto Online](https://www.paloaltoonline.com)\
-[Parool](https://www.parool.nl)\
 [Philosophy Now](https://philosophynow.org/)\
+[Parool](https://www.parool.nl)\
 [Quartz](https://qz.com)\
 [Quora](https://www.quora.com)\
 [Scientific American](https://scientificamerican.com)\
